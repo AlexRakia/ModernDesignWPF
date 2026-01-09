@@ -6,20 +6,19 @@
         xmlns:local="clr-namespace:ModernDesign"
         xmlns:viewModel="clr-namespace:ModernDesign.MVVM.ViewModel" 
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="900"
-        WindowStyle="None"
+        Title="Welcome to the Main Window" Height="600" Width="900"
+        WindowStyle="ThreeDBorderWindow"
         ResizeMode="CanResize"
         Background="Transparent"
-        AllowsTransparency="True"
-        
+        AllowsTransparency="False"
         >
 
     <Window.DataContext>
         <viewModel:MainViewModel />
     </Window.DataContext>
     
-    <Border Background="#272537" 
-            CornerRadius="20">
+    <Border Background="#272570" 
+            CornerRadius="2">
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="200"/>
@@ -41,22 +40,48 @@
             </TextBlock>
 
             <StackPanel Grid.Row="1">
-                <RadioButton Content="Home" 
+                <RadioButton Content=" Home" 
                              Height="50"
                              Foreground="White"
                              FontSize="14" 
+                             Margin="10,0,10,0"
                              Style="{StaticResource MenuButtonTheme}"
                              IsChecked="True"
                              Command="{Binding HomeViewCommand}"/>
                 
-                <RadioButton Content="Discovery" Height="50"
+                <RadioButton Content=" Discovery" Height="50"
                              Foreground="White"
-                             FontSize="14" 
+                             FontSize="14"
+                             Margin="10,0,10,0"
                              Style="{StaticResource MenuButtonTheme}"
                              Command="{Binding DiscoveryViewCommand}"/>
-                <RadioButton Content="Featured" Height="50"
+
+                <RadioButton Content=" Featured" Height="50"
                              Foreground="White"
-                             FontSize="14" 
+                             FontSize="14"
+                             Margin="10,0,10,0" 
+                             Style="{StaticResource MenuButtonTheme}"
+                             Command="{Binding FeaturedViewCommand}"
+                             />
+
+                <RadioButton Content=" Test1" Height="50"
+                             Foreground="White"
+                             FontSize="14"
+                             Margin="10,0,10,0" 
+                             Style="{StaticResource MenuButtonTheme}"
+                             />
+
+                <RadioButton Content=" Test2" Height="50"
+                             Foreground="White"
+                             FontSize="14"
+                             Margin="10,0,10,0" 
+                             Style="{StaticResource MenuButtonTheme}"
+                             />
+
+                <RadioButton Content=" Test3" Height="50"
+                             Foreground="White"
+                             FontSize="14"
+                             Margin="10,0,10,0" 
                              Style="{StaticResource MenuButtonTheme}"
                              />
             </StackPanel>
