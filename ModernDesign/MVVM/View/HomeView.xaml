@@ -46,9 +46,7 @@
                                    Margin="20,10,10,0"/>
 
                     </StackPanel>
-
                 </Grid>
-
             </Border>
 
             <Border Width="200" Height="200" 
@@ -60,9 +58,14 @@
                         <GradientStop Color="#ffb73a" Offset="1" />
                     </LinearGradientBrush>
                 </Border.Background>
+                
+                <Grid>
+                    <TextBlock Text="Test" Foreground="Black"
+                                   FontSize="28"
+                                   Margin="20,10,10,0"/>    
+                </Grid>
             </Border>
-
-
+            
         </StackPanel>
 
         <StackPanel>
@@ -71,6 +74,7 @@
                     <Setter Property="Margin" Value="15,0,0,0" />
                 </Style>
             </StackPanel.Resources>
+
             <TextBlock Text="Most Watched"
                    Foreground="White"
                    FontSize="20"
