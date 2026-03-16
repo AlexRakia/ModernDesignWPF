@@ -1,5 +1,6 @@
 # ModernDesignWPF
 WPF Modern Design UI for single Window Desktop Apps
+(Based on MVVM) Design pattern.
 
 # Purpose
 ModernDesignWPF project for practice and UI experiments
